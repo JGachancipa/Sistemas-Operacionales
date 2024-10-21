@@ -1,0 +1,14 @@
+.collapse {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden; /* Oculta el contenido desbordante */
+  }
+  
+  .card-body {
+    opacity: 0; /* Oculta el contenido inicialmente */
+    transition: opacity 0.5s ease; /* Suaviza la transición de opacidad */
+  }
+  
+  .collapse.show .card-body {
+    opacity: 1; /* Hace visible el contenido cuando está abierto */
+  }
+  
