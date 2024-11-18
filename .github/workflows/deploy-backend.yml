@@ -21,7 +21,8 @@ jobs:
 
       - name: Build the backend
         run: |
-          cd backend
+          cd backend-operacionales
+          cd api
           mvn clean package -DskipTests
 
       - name: Set Heroku Buildpack
