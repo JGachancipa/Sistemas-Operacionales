@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    private static final String ALLOWED_ORIGIN = "http://localhost:3000";
+    private static final String ALLOWED_ORIGIN = "https://operacionales-front-3e6297ebbc2e.herokuapp.com";
     private static final String[] ALLOWED_METHODS = {"GET", "POST", "OPTIONS"};
     private static final String[] ALLOWED_HEADERS = {"Authorization", "Content-Type", "Accept"};
 

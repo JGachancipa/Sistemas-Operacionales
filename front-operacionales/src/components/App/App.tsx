@@ -12,7 +12,7 @@ const App = () => {
       <AppContextProvider>
         <div className="ui container">
           <Routes>
-            <Route path={ PAGES.CONSULT } Component={ CaracteristicsForm } />
+            <Route path={ PAGES.HOME } Component={ CaracteristicsForm } />
             <Route path={ PAGES.RECOMENDATIONS } Component={ Recomendation } />
           </Routes>
         </div>
