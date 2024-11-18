@@ -5,7 +5,7 @@ FROM amazoncorretto:21
 WORKDIR /app
 
 # Copia el archivo JAR generado por Spring Boot a la imagen
-COPY target/*.jar app.jar
+COPY target/api-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponemos el puerto en el que la aplicación Spring Boot escucha (puerto por defecto: 8080)
 EXPOSE 8080
