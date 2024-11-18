@@ -1,18 +1,18 @@
 .collapse {
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-  overflow: hidden; /* Oculta el contenido desbordante */
-}
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden; /* Oculta el contenido desbordante */
+  }
+  
+  .card-body {
+    opacity: 0; /* Oculta el contenido inicialmente */
+    transition: opacity 0.5s ease; /* Suaviza la transición de opacidad */
+  }
+  
+  .collapse.show .card-body {
+    opacity: 1; /* Hace visible el contenido cuando está abierto */
+  }
 
-.card-body {
-  opacity: 0; /* Oculta el contenido inicialmente */
-  transition: opacity 0.5s ease; /* Suaviza la transición de opacidad */
-}
-
-.collapse.show .card-body {
-  opacity: 1; /* Hace visible el contenido cuando está abierto */
-}
-
-/* General Styling */
+  /* General Styling */
 .accordion-item {
   transition: all 0.3s ease;
   border-radius: 8px;
@@ -34,6 +34,17 @@
 .accordion-button.collapsed {
   background: #f8f9fa;
   color: #000;
+}
+
+/* Borders for Each System */
+.border-Windows-11-Pro {
+  border-color: #0078d4; /* Azul para Windows */
+}
+.border-Ubuntu-22-04-LTS {
+  border-color: #dd4814; /* Naranja para Ubuntu */
+}
+.border-SteamOS {
+  border-color: #2a475e; /* Azul oscuro para SteamOS */
 }
 
 /* Image Styling */
