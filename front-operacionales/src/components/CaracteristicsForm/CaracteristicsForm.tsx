@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { Recomendation } from "@components/Recomendations/Recomendation";
 
 // Definimos los tipos para los datos del formulario
 interface FormData {
