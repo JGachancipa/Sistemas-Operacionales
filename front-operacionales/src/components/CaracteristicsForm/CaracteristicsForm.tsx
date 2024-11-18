@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
-import { Recomendation } from "components/Recomendations/Recomendation"; // Asegúrate de importar tu componente Recomendation
 import { useNavigate } from "react-router-dom";
+import { Recomendation } from "@components/Recomendations/Recomendation";
 
 // Definimos los tipos para los datos del formulario
 interface FormData {
@@ -27,6 +27,7 @@ export const CaracteristicsForm = () => {
             const apiURL = "https://operacionales-back-da5977d8e385.herokuapp.com/api/system-recommendation";
             const response = await axios.post(apiURL, data);
             setRecommendations(response.data);
+            console.log(recommendations);
             navigate("/recommendations", { state: { recommendations: response.data.choices } });
         } catch (error: any) {
             console.error("Error al enviar los datos:", error.message);

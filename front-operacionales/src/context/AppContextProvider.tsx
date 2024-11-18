@@ -2,7 +2,6 @@ import React, { useReducer } from 'react';
 import AppContext, { initialState } from 'context/AppContext';
 import rootReducer from 'reducers';
 import { useNavigate } from 'react-router-dom';
-import { TodoActionType } from 'types/actions/TodoActions';
 import { PAGES } from 'utils/Constants';
 
 type ComponentProps = {
