@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^1.7.7",
     "cra-template-typescript": "1.2.0",
     "front-operacionales": "file:",
@@ -13,14 +12,6 @@
     "react-router-dom": "^6.27.0",
     "react-scripts": "^5.0.1",
     "uid": "^2.0.2"
-=======
-    "cra-template-typescript": "1.2.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-hook-form": "^7.53.0",
-    "react-router-dom": "^6.27.0",
-    "react-scripts": "^5.0.1"
->>>>>>> 78f63fe25701e4feb98e2f3403795954255207b9
   },
   "scripts": {
     "start": "react-scripts start",
