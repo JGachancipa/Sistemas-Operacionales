@@ -24,7 +24,7 @@ export const CaracteristicsForm = () => {
 
     const onSubmit: SubmitHandler<FormData> = async (data) => {
         try {
-            const apiURL = "http://localhost:8080/api/system-recommendation";
+            const apiURL = "https://operacionales-back-da5977d8e385.herokuapp.com/api/system-recommendation";
             const response = await axios.post(apiURL, data);
             setRecommendations(response.data);
             navigate("/recommendations", { state: { recommendations: response.data.choices } });
