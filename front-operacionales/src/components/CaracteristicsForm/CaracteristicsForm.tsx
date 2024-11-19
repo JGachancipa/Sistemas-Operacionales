@@ -23,7 +23,7 @@ export const CaracteristicsForm = () => {
 
     const onSubmit: SubmitHandler<FormData> = async (data) => {
         try {
-            const apiURL = "https://operacionales-back-da5977d8e385.herokuapp.com/api/system-recommendation";
+            const apiURL = "https://operacionales-back-59e12a3505b8.herokuapp.com/api/system-recommendation";
             const response = await axios.post(apiURL, data);
             setRecommendations(response.data);
             console.log(recommendations);
